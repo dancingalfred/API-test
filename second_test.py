@@ -1,8 +1,6 @@
 import requests
-import requests
 import os
 import glob
-import json
 
 folder_path = './Job_Bulletins/'
 
@@ -26,4 +24,6 @@ for file_path in glob.glob(os.path.join(folder_path, '*.txt')):
                 print(f"Request failed with status code {response.status_code}")
         except:
             print("crash")
+    
+    
 print(results)
